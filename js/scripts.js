@@ -6,8 +6,12 @@ function convertNumberToString(number){
   return number.toString();
 }
 
+function convertStringToArrayOfChars(number){
+  var string = convertNumberToString(number)
+  return string.split("");
+}
+
 
 $(document).ready(function(){
-  convertToRange(5);
-  console.log(convertNumberToString(45));
+  console.log(convertStringToArrayOfChars(54));
 })

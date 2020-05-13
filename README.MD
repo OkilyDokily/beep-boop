@@ -17,8 +17,8 @@ _Page selectively replaces certain numbers with beeps and boops according to a s
 |---------------------------------------------------------------------------------------------------------------------------|------------------|------------------------------------------------|
 | create a range of numbers from inputted number                                                                            | 5                | 1,2,3,4,5                                      |
 | convert a number to a string                                                                                              | 13               | "13"                                           |
-| convert a string to an array of chars                                                                                     | "13"             | ['1','3]                                       |
-| filter the array according to which values are between 1 and 3 inclusive                                                  | ['1', '4','3']   | ['1','3']                                      |
+| convert the previous string to an array of chars                                                                                     | "13"             | ['1','3]                                       |
+| filter that array according to which values are between 1 and 3 inclusive                                                  | ['1', '4','3']   | ['1','3']                                      |
 | find the maximum value in the filtered array                                                                              | ['1','3']        | 3                                              |
 | find the appropriate return value for the maximum value                                                                   | 3                | "I'm sorry, Dave. I'm afraid I can't do that." |
 | if the filter is empty then return the number in string for                                                               | [] (for 46)      | 46                                             |
