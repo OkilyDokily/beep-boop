@@ -15,7 +15,7 @@ _Page selectively replaces certain numbers with beeps and boops according to a s
 ## SPEC
 | Spec                                                                                                                      | Input            | Ouput                                          |
 |---------------------------------------------------------------------------------------------------------------------------|------------------|------------------------------------------------|
-| create a range of numbers from inputted number                                                                            | 1                | 1,2,3,4,5                                      |
+| create a range of numbers from inputted number                                                                            | 5                | 1,2,3,4,5                                      |
 | convert a number to a string                                                                                              | 13               | "13"                                           |
 | convert a string to an array of chars                                                                                     | "13"             | ['1','3]                                       |
 | filter the array according to which values are between 1 and 3 inclusive                                                  | ['1', '4','3']   | ['1','3']                                      |
