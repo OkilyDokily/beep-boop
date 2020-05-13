@@ -11,7 +11,14 @@ function convertStringToArrayOfChars(number){
   return string.split("");
 }
 
+function filterTheArrayOfChars(number){
+  var arrayOfChars = convertStringToArrayOfChars(number);
+  return arrayOfChars.filter(function(item){
+    return /[1-3]/.test(item);
+  })
+}
+
 
 $(document).ready(function(){
-  console.log(convertStringToArrayOfChars(54));
+  console.log(filterTheArrayOfChars(1223345));
 })
