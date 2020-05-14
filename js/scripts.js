@@ -24,11 +24,15 @@ $(document).ready(function(){
    var intervalId;
    var input = $("input").val();
    var results = convertNumberToBoopSequence(parseInt(input));
+   
    function code(){
-    $("#results").append("<p>" + results[0]+ "</p>");
+    $("#results").prepend("<p>" + results[0]+ "</p>");
     results.shift();
     if (results.length === 0){
       clearInterval(intervalId);
+    }
+    if($("#results").children().length === 11){
+      $("#results p:nth-of-type(10)").remove();
     }
   }
   intervalId = setInterval(code,500);
