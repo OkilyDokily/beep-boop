@@ -25,8 +25,9 @@ $(document).ready(function(){
    var input = $("input").val();
    var results = convertNumberToBoopSequence(parseInt(input));
    
+   var i = 0;
    function code(){
-    $("#results").prepend("<p>" + results[0]+ "</p>");
+    $("#results").prepend("<p>" + "<span>" + (i++) + ": " + "</span>"  + results[0]+ "</p>");
     results.shift();
     if (results.length === 0){
       clearInterval(intervalId);

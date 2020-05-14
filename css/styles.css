@@ -5,3 +5,11 @@ body{
 div.well.well-sm{
   background-color:lightsteelblue;
 }
+
+p{
+  color: rgb(5, 74, 97);
+}
+
+p span{
+  color: rgb(84, 84, 206);
+}
