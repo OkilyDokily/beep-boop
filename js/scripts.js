@@ -18,7 +18,11 @@ function convertToRange(number){
 }
 
 
-
 $(document).ready(function(){
-  console.log(convertToRange(20));
+ $("form").submit(function(e){
+   e.preventDefault();
+   var input = $("input").val();
+   var result = convertToRange(parseInt(input));
+   $("#results").text(result)
+ })
 })
