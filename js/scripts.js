@@ -14,11 +14,11 @@ function convertToRange(number){
       default:
         return i;
     }
-  });
+  }).join(" ");
 }
 
 
 
 $(document).ready(function(){
-  console.log(convertToRange(5));
+  console.log(convertToRange(20));
 })
