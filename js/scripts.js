@@ -18,7 +18,12 @@ function filterTheArrayOfChars(number){
   })
 }
 
+function findMaximumValueInFilteredArray(number){
+  var filteredArray = filterTheArrayOfChars(number);
+  console.log(filteredArray)
+  return Math.max(...filteredArray)
+}
 
 $(document).ready(function(){
-  console.log(filterTheArrayOfChars(1223345));
+  console.log(findMaximumValueInFilteredArray(1223345));
 })
