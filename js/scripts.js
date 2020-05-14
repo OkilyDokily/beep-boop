@@ -26,7 +26,18 @@ $(document).ready(function(){
    var results = convertNumberToBoopSequence(parseInt(input));
    
    var i = 0;
+
+   function displayImage(image){
+    $("img").remove();
+    switch (image){
+      case "Beep!":
+      $("div.image").append("<img src='img/beep.jpg'>");
+    }
+   }
+
+
    function code(){
+    displayImage(results[0]);
     $("#results").prepend("<p>" + "<span>" + (i++) + ": " + "</span>"  + results[0]+ "</p>");
     results.shift();
     if (results.length === 0){
