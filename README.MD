@@ -21,7 +21,6 @@ _Page selectively replaces certain numbers with beeps and boops according to a s
 | filter that array according to which values are between 1 and 3 inclusive                                                  | ['1', '4','3']   | ['1','3']                                      |
 | find the maximum value in the filtered array                                                                              | ['1','3']        | 3                                              |
 | find the appropriate return value for the maximum value                                                                   | 3                | "I'm sorry, Dave. I'm afraid I can't do that." |
-| if the filter is empty then return the number in string for                                                               | [] (for 46)      | 46                                             |
 | map over the range created in step one and evaluate each number according to steps 2 through 7 a | 1, 2             | ['beep','boop']                                |
 | join each item in the array on a ", "                                                                                     | ['beep','boop']  | "beep, boop"                                   |
 
