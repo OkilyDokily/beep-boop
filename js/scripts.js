@@ -1,4 +1,4 @@
-function convertToRange(number){
+function convertNumberToBoopSequence(number){
   return new Array(number + 1).fill(undefined).map(function (_,i){
     var filteredArray = i.toString().split("").filter(function (item){
       return /[1-3]/.test(item);
@@ -14,15 +14,26 @@ function convertToRange(number){
       default:
         return i;
     }
-  }).join(" ");
+  });
 }
 
 
 $(document).ready(function(){
  $("form").submit(function(e){
    e.preventDefault();
+   var intervalId;
    var input = $("input").val();
-   var result = convertToRange(parseInt(input));
-   $("#results").text(result)
+   var results = convertNumberToBoopSequence(parseInt(input));
+   function code(){
+    $("#results").append("<p>" + results[0]+ "</p>");
+    results.shift();
+    if (results.length === 0){
+      clearInterval(intervalId);
+    }
+  }
+  intervalId = setInterval(code,500);
+  
+   
+   
  })
 })
