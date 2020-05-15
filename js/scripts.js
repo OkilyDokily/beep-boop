@@ -28,8 +28,6 @@ $(document).ready(function(){
     var input = $("input").val();
     var results = convertNumberToBoopSequence(parseInt(input));
     
-
-    
     function displayImage(image){
       $("img").remove();
       switch (image){
