@@ -14,3 +14,6 @@ p span{
   color: rgb(84, 84, 206);
 }
 
+div.container{
+  width: 33%;
+}
