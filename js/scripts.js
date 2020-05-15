@@ -63,10 +63,11 @@ $(document).ready(function(){
         clearInterval(intervalId);
       }
       if($("#results").children().length === 11){
-        $("#results p:nth-of-type(10)").remove();
+        $("#results p:nth-of-type(11)").remove();
       }
     }
-    intervalId = setInterval(code,500); 
+    intervalId = setInterval(code, 500); 
+    
     function clearResults(){
       $("p").remove();
     }    
