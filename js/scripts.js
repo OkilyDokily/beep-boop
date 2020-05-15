@@ -33,9 +33,11 @@ $(document).ready(function(){
       switch (image){
         case "Beep!":
           $("div.image").append("<img src='img/beep.jpg'>");
+          $('#beep')[0].play()
           break;
         case "Boop!":
           $("div.image").append("<img src='img/boop.jpg'>");
+          $('#boop')[0].play()
           break;
         case "I'm sorry, Dave. I'm afraid I can't do that.":
           var i = 0;
