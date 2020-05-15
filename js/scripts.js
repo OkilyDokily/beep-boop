@@ -31,7 +31,26 @@ $(document).ready(function(){
     $("img").remove();
     switch (image){
       case "Beep!":
-      $("div.image").append("<img src='img/beep.jpg'>");
+        $("div.image").append("<img src='img/beep.jpg'>");
+        break;
+      case "Boop!":
+        $("div.image").append("<img src='img/boop.jpg'>");
+        break;
+      case "I'm sorry, Dave. I'm afraid I can't do that.":
+        var i = 0;
+        requestAnimationFrame(function callback(){
+          if (i < 15){
+              console.log("call back")
+              $("body").css("backgroundColor","red");
+              i++;
+              requestAnimationFrame(callback);
+            }
+            else{
+              $("body").css("backgroundColor","aliceblue")
+            }   
+        });
+        
+       
     }
    }
 
