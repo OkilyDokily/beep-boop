@@ -20,10 +20,11 @@ function convertNumberToBoopSequence(number){
 
 
 $(document).ready(function(){
+  var intervalId;
   $("form").submit(function(e){
     clearResults();
     e.preventDefault();
-    var intervalId;
+    
     var input = $("input").val();
     var results = convertNumberToBoopSequence(parseInt(input));
     
@@ -69,6 +70,7 @@ $(document).ready(function(){
     intervalId = setInterval(code, 500); 
     
     function clearResults(){
+      clearInterval(intervalId);
       $("p").remove();
     }    
   })
