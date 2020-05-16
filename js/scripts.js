@@ -43,9 +43,8 @@ $(document).ready(function(){
           $('#boop')[0].play()
           break;
         case "I'm sorry, Dave. I'm afraid I can't do that.":
-              requestAnimationFrame(function(){
-                $("body").css("backgroundColor","red"); 
-              }) 
+          $("body").css("backgroundColor","red");     
+          break;
         default:
           $("body").css("backgroundColor","aliceblue")
         }
