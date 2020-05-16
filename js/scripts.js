@@ -18,7 +18,6 @@ function convertNumberToBoopSequence(number){
   });
 }
 
-
 $(document).ready(function(){
   var intervalId;
   $("form").submit(function(e){
@@ -28,33 +27,29 @@ $(document).ready(function(){
     var input = $("input").val();
     var results = convertNumberToBoopSequence(parseInt(input));
     
+    
+   
     function displayImage(image){
       $("img").remove();
       switch (image){
         case "Beep!":
+          $("body").css("backgroundColor","aliceblue")
           $("div.image").append("<img src='img/beep.jpg'>");
           $('#beep')[0].play()
           break;
         case "Boop!":
+          $("body").css("backgroundColor","aliceblue")
           $("div.image").append("<img src='img/boop.jpg'>");
           $('#boop')[0].play()
           break;
         case "I'm sorry, Dave. I'm afraid I can't do that.":
-          var i = 0;
-          requestAnimationFrame(function callback(){
-            if (i < 15){
-                console.log("call back")
-                $("body").css("backgroundColor","red");
-                i++;
-                requestAnimationFrame(callback);
-              }
-              else{
-                $("body").css("backgroundColor","aliceblue")
-              }   
-          });
-      }
+              requestAnimationFrame(function(){
+                $("body").css("backgroundColor","red"); 
+              }) 
+        default:
+          $("body").css("backgroundColor","aliceblue")
+        }
     }
-
     var i = 0;
     function code(){
       displayImage(results[0]);
@@ -73,5 +68,9 @@ $(document).ready(function(){
       clearInterval(intervalId);
       $("p").remove();
     }    
+  
   })
+
+   
+  
 })
