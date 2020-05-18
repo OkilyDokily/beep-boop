@@ -26,7 +26,8 @@ _Page selectively replaces certain numbers with beeps and boops according to a s
 
 ## Setup/Installation Requirements
 
-Clone the repo and open the .html file in a browser.
+No installation need!
+Go to https://okilydokily.github.io/beep-boop/
 
 ## Known Bugs
 
